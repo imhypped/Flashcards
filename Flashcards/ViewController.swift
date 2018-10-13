@@ -9,12 +9,18 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var Frontlabel: UILabel!
+    @IBOutlet weak var Backlabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    @IBAction func didTapOnFlashcard(_ sender: Any) {
+        Frontlabel.isHidden = true
+    }
+    
 }
 
