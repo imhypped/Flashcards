@@ -21,6 +21,8 @@ class ViewController: UIViewController {
     @IBAction func didTapOnFlashcard(_ sender: Any) {
         Frontlabel.isHidden = true
     }
-    
-}
+    func updateFlashcard(question: String, answer: String) {
+        // Do struff here
+    }
+
 
