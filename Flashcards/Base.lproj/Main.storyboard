@@ -76,7 +76,7 @@
         <!--Creation View Controller-->
         <scene sceneID="T4r-3p-pC4">
             <objects>
-                <viewController id="6kl-lz-aqq" customClass="CreationViewController" sceneMemberID="viewController">
+                <viewController id="6kl-lz-aqq" customClass="CreationViewController" customModule="Flashcards" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bMl-yV-6Ku">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -104,7 +104,16 @@
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" id="chp-3H-cjT">
-                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="B3n-zy-zEF"/>
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="B3n-zy-zEF">
+                            <connections>
+                                <action selector="didTapOnCancel:" destination="6kl-lz-aqq" id="4bf-s8-Cpm"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="I6a-zF-rww">
+                            <connections>
+                                <action selector="didTapOnDone:" destination="6kl-lz-aqq" id="biR-gd-i16"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6IU-W4-ljr" userLabel="First Responder" sceneMemberID="firstResponder"/>

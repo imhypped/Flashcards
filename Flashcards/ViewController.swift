@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         Frontlabel.isHidden = true
     }
     func updateFlashcard(question: String, answer: String) {
-        // Do struff here
+        //Do stuff here
     }
 
 

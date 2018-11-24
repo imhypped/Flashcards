@@ -10,6 +10,8 @@ import UIKit
 
 class CreationViewController: UIViewController {
 
+    var flashcardsController: ViewController!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,6 +21,10 @@ class CreationViewController: UIViewController {
     @IBAction func didTapOnCancel(_ sender: Any) {
         dismiss(animated: true)
     }
+    
+    @IBAction func didTapOnDone(_ sender: Any) {
+    }
+    
     
     /*
     // MARK: - Navigation
